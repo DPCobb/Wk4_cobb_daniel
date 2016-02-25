@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Cobb: Wk4 | Showtimes Pg</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/star.css">
+    <link rel="stylesheet" href="css/magnific.css">
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav-bar"> <!-- Nav Bar  -->
+        <ul>
+            <li class="button" id="share"><a href="#">Share<span class="arrow-down"></span></a>
+                <ul id="share-menu">
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.example.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/home?status=Check%20out%20the%20Starlight%20Drive%20In%20http%3A//www.example.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://plus.google.com/share?url=http%3A//www.example.com" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                </ul>
+            </li>
+            <li class="button" id="contact"><a href="#">Contact</a></li>
+            <li class="button" id="menu"><a href="#">Menu<span class="arrow-down"></span></a>
+                <ul id="submenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="showtimes.html">Showtimes</a></li>
+                    <li><a href="#" class="active">Amenities</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> <!-- End Nav Bar  -->
+    <div id="title-container-sub"> <!--  Logo and Star Wrapper -->
+        <div id="title">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="star"></div>
+        <div class="star2"></div>
+        <div class="star3"></div>
+        <div class="star4"></div>
+        <div class="star5"></div>
+        <div class="star6"></div>
+        <div class="star7"></div>
+        <div class="star8"></div>
+
+    </div> <!--  End Logo and Star Wrapper -->
+    <div class="content"> <!--  Start content Div -->
+        <h1>Amenities</h1>
+        <h2>What we offer</h2>
+        <p>Not only do we offer a great and unique movie experience, we have plenty of things you would expect to see at a movie theater</p>
+        <section class="amenity"> <!--  Concession Section -->
+            <h3>Concessions</h3>
+            <p>Popcorn, Candy Bar, Soda, and Hot Dogs are just some of the snacks we offer.</p>
+        </section> <!-- End Concession  -->
+        <section class="amenity"> <!-- Diner Section  -->
+            <h3>On Site Diner</h3>
+            <p>Coming early or staying late grab a bite to eat at the Starlight Diner</p>
+        </section> <!-- End Diner  -->
+        <section class="amenity"> <!--  Value Section -->
+            <h3>Why choose Starlight Drive In?</h3>
+            <ul class="img-gallery"> <!--  Image Gallery Start -->
+                <li><a href="images/drivein.jpg"><img src="images/drivein.jpg" alt="drive in" class="gal-img"></a></li>
+                <li><a href="images/diner.jpg"><img src="images/diner.jpg" alt="diner" class="gal-img"></a></li>
+                <li><a href="images/candy.jpg"><img src="images/candy.jpg" alt="candy bar" class="gal-img"></a></li>
+                <li><a href="images/hotdog.jpg"><img src="images/hotdog.jpg" alt="hotdog" class="gal-img"></a></li>
+                <li><a href="images/logo.png"><img src="images/logo.png" alt="logo" class="gal-img active-img"></a></li>
+                <li><a href="images/dinerinside.jpg"><img src="images/dinerinside.jpg" alt="diner inside" class="gal-img"></a></li>
+                <li><a href="images/popcorn.jpg"><img src="images/popcorn.jpg" alt="popcorn" class="gal-img"></a></li>
+                <li><a href="images/soda.jpg"><img src="images/soda.jpg" alt="soda" class="gal-img"></a></li>
+                <li><a href="images/ticket.jpg"><img src="images/ticket.jpg" alt="ticket" class="gal-img"></a></li>
+            </ul> <!-- Image Gallery End  -->
+            <p>Cheap tickets, plenty of parking, double features, and more importantly the privacy of your own vehicle. Come watch
+            a movie at the Starlight Drive In today and discover a new movie experience.</p>
+        </section> <!-- End Value  -->
+
+
+    </div><!-- End Content  -->
+    <div class="cars"><!--  Cars Banner -->
+        <img src="images/cars4.png" alt="cars banner">
+    </div> <!-- End Cars banner  -->
+    <!-- Image Gallery Script -->
+    <script src="scripts/magnific.js"></script>
+    <script type="text/javascript">
+        $('.amenity').magnificPopup({
+            delegate: 'a', // child items selector, by clicking on it popup will open
+            type: 'image',
+            // other options
+            gallery:{enabled:true}
+        });
+    </script>
+    <!-- Menu Hover Script  -->
+    <script>
+        $(document).ready(function(){
+            $("#menu").hover(function(){
+                $("#submenu").slideToggle()
+            });
+            $("#share").hover(function(){
+                $("#share-menu").slideToggle()
+            });
+
+        });
+    </script>
+</body>
+</html>

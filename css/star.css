@@ -1,0 +1,67 @@
+/*----- Star Twinkle Animation -----*/
+@keyframes twinkle{
+    0% {opacity:1;}
+    10% {opacity:.95;}
+    20% {opacity:.8;}
+    30% {opacity:.6;}
+    50% {opacity:.7;}
+    60% {opacity:.75;}
+    70% {opacity:.9;}
+    80% {opacity:.8;}
+    90% {opacity:.95;}
+    100% {opacity:1;}
+}
+/*----- General Style for Stars -----*/
+.star, .star2, .star3, .star4, .star5, .star6, .star7, .star8{
+    width:.5%;
+    height:5px;
+    background: rgb(255,214,35); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,214,35,1) 0%, rgba(2,2,1,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,214,35,1) 0%,rgba(2,2,1,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,214,35,1) 0%,rgba(2,2,1,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    opacity: 1;
+    position: absolute;
+    border-radius:60%;
+}
+
+/*----- Stars Location and Animation settings -----*/
+.star{
+    top: 30px;
+    left: 20%;
+    animation: twinkle 3s infinite ease-in-out;
+}
+.star2{
+    top: 50px;
+    left: 50%;
+    animation: twinkle 5s infinite ease-in-out 1s;
+}
+.star3{
+    top: 100px;
+    left: 45%;
+    animation: twinkle 2s infinite ease-in-out 3s;
+}
+.star4{
+    top: 22px;
+    left: 90%;
+    animation: twinkle 2s infinite ease-in-out 8s;
+}
+.star5{
+    top: 121px;
+    left: 98%;
+    animation: twinkle 2s infinite ease-in-out 1s;
+}
+.star6{
+    top: 67px;
+    left: 35%;
+    animation: twinkle 2s infinite ease-in-out 3s;
+}
+.star7{
+    top: 34px;
+    left: 88%;
+    animation: twinkle 2s infinite ease-in-out 5s;
+}
+.star8{
+    top: 44px;
+    left: 65%;
+    animation: twinkle 2s infinite ease-in-out 9s;
+}

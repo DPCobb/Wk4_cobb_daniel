@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Cobb: Wk4 | Showtimes Pg</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/star.css">
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav-bar"><!--  Nav Bar Start -->
+        <ul>
+            <li class="button" id="share"><a href="#">Share<span class="arrow-down"></span></a>
+                <ul id="share-menu">
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.example.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/home?status=Check%20out%20the%20Starlight%20Drive%20In%20http%3A//www.example.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://plus.google.com/share?url=http%3A//www.example.com" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                </ul>
+            </li>
+            <li class="button" id="contact"><a href="#">Contact</a></li>
+            <li class="button" id="menu"><a href="#">Menu<span class="arrow-down"></span></a>
+                <ul id="submenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="active">Showtimes</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> <!-- End Nav Bar  -->
+    <div id="title-container-sub"> <!-- Logo and Star Wrapper  -->
+        <div id="title">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="star"></div>
+        <div class="star2"></div>
+        <div class="star3"></div>
+        <div class="star4"></div>
+        <div class="star5"></div>
+        <div class="star6"></div>
+        <div class="star7"></div>
+        <div class="star8"></div>
+    </div> <!--  End Logo and Star Wrapper -->
+    <div class="content"> <!-- Start Content Div  -->
+        <h1>Showtimes</h1>
+        <table> <!--  Showtimes Table -->
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Times</th>
+                    <th>Film</th>
+                    <th>Specials</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2/27</td>
+                    <td>All Day</td>
+                    <td>Night Of the Living Dead</td>
+                    <td>Free Small Pop Corn</td>
+                </tr>
+                <tr>
+                    <td>2/28</td>
+                    <td>All Day</td>
+                    <td>Night Of the Living Dead</td>
+                    <td>Free Small Soda</td>
+                </tr>
+                <tr>
+                    <td>3/4</td>
+                    <td>1pm, 4pm, 7pm, 11pm</td>
+                    <td>Night Of the Living Dead, Return of the Living Dead</td>
+                    <td>Double Feature</td>
+                </tr>
+                <tr>
+                    <td>3/5</td>
+                    <td>All day</td>
+                    <td>Night Of the Living Dead</td>
+                    <td>Free Small Soda</td>
+                </tr>
+                <tr>
+                    <td>3/6</td>
+                    <td>All day</td>
+                    <td>Night Of the Living Dead</td>
+                    <td>Kids Free</td>
+                </tr>
+                <tr>
+                    <td>3/11</td>
+                    <td>1pm, 4pm, 7pm, 11pm</td>
+                    <td>Night Of the Living Dead, Return of the Living Dead</td>
+                    <td>Double Feature</td>
+                </tr>
+                <tr>
+                    <td>3/12</td>
+                    <td>All Day</td>
+                    <td>Night Of the Living Dead</td>
+                    <td>Free Small Pop Corn</td>
+                </tr>
+                <tr>
+                    <td>3/13</td>
+                    <td>All day</td>
+                    <td>Night Of the Living Dead</td>
+                    <td>Kids Free</td>
+                </tr>
+            </tbody>
+        </table> <!-- End Table  -->
+
+    </div> <!-- End Content  -->
+    <div class="cars"> <!--  Cars banner -->
+        <img src="images/cars4.png" alt="cars banner">
+    </div> <!-- End Cars banner  -->
+    <!--  Hover Script for Menu -->
+    <script>
+        $(document).ready(function(){
+            $("#menu").hover(function(){
+                $("#submenu").slideToggle()
+            });
+            $("#share").hover(function(){
+                $("#share-menu").slideToggle()
+            });
+
+        });
+    </script>
+</body>
+</html>

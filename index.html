@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Cobb: Wk4</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/star.css">
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <div id="title-container"> <!-- Wrapper for Logo, Nav, and Featured Film -->
+        <div id="title"> <!-- Wrapper for Logo and Nav Elements  -->
+            <img src="images/logo.png" alt="logo">
+            <div class="nav"> <!-- Nav Start  -->
+                <ul>
+                    <li class="button" id="menu"><a href="#">Menu<span class="arrow-down"></span></a>
+                        <ul id="submenu">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="showtimes.html">Showtimes</a></li>
+                            <li><a href="amenities.html">Amenities</a></li>
+                            <li><a href="tickets.html">Tickets</a></li>
+                        </ul>
+                    </li>
+                    <li class="button" id="contact"><a href="#">Contact</a></li>
+                    <li class="button" id="share"><a href="#">Share<span class="arrow-down"></span></a>
+                        <ul id="share-menu">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.example.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com/home?status=Check%20out%20the%20Starlight%20Drive%20In%20http%3A//www.example.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://plus.google.com/share?url=http%3A//www.example.com" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- Nav End  -->
+        </div> <!--  Title End -->
+        <!-- Twinkling Stars on top of screen, animation in star.css  -->
+        <div class="star"></div>
+        <div class="star2"></div>
+        <div class="star3"></div>
+        <div class="star4"></div>
+        <div class="star5"></div>
+        <div class="star6"></div>
+        <div class="star7"></div>
+        <div class="star8"></div>
+        <div class="featured-film"> <!-- Start feature film wrapper  -->
+            <div class="feature-title"> <!-- Feature film wrapper -->
+                <h1>Featured Film</h1>
+                <!-- Video Source from Youtube: https://www.youtube.com/watch?v=0TAGtIQvebs -->
+                <div class="film-screen"> <!-- Film screen used to give wider look to video box  -->
+                    <!-- Call to Action tag, get tickets link  -->
+                    <div class="tag"><a href="tickets.html" title="Ticket Purchase"> Get Tickets Now! </a></div>
+                    <video controls>
+                        <source src="video/night.mp4" type="video/mp4">
+                            <a href="https://www.youtube.com/watch?v=0TAGtIQvebs" target="blank" title="trailer">Your browser does not support HTML5 video tag, click here to view trailer.</a>
+                    </video>
+                </div> <!-- End Film Screen  -->
+            </div> <!--  End Feature Film Wrapper -->
+        </div> <!-- End Featured Film  -->
+    </div>
+    <div class="cars"> <!-- Cars Banner  -->
+        <img src="images/cars4.png" alt="cars banner">
+    </div> <!-- End Cars Banner  -->
+</body>
+</html>

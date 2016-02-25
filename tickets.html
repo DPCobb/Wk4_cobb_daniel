@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Cobb: Wk4 | Showtimes Pg</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/star.css">
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav-bar"> <!-- Nav Bar  -->
+        <ul>
+            <li class="button" id="share"><a href="#">Share<span class="arrow-down"></span></a>
+                <ul id="share-menu">
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.example.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/home?status=Check%20out%20the%20Starlight%20Drive%20In%20http%3A//www.example.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://plus.google.com/share?url=http%3A//www.example.com" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                </ul>
+            </li>
+            <li class="button" id="contact"><a href="#">Contact</a></li>
+            <li class="button" id="menu"><a href="#">Menu<span class="arrow-down"></span></a>
+                <ul id="submenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="showtimes.html">Showtimes</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="#" class="active">Tickets</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> <!-- End Nav Bar  -->
+    <div id="title-container-sub"> <!-- Wrapper for Logo and Stars  -->
+        <div id="title">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="star"></div>
+        <div class="star2"></div>
+        <div class="star3"></div>
+        <div class="star4"></div>
+        <div class="star5"></div>
+        <div class="star6"></div>
+        <div class="star7"></div>
+        <div class="star8"></div>
+
+    </div> <!-- End logo and star wrapper  -->
+    <div class="content"> <!--  Start Content -->
+        <h1>Tickets</h1>
+        <table> <!--  Ticket Price Table -->
+            <thead>
+                <tr>
+                    <th>Ticket</th>
+                    <th>Price</th>
+                    <th>Double Feature</th>
+                    <th>Matinee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adult</td>
+                    <td>$9.00</td>
+                    <td>$12.00</td>
+                    <td>$6.00</td>
+                </tr>
+                <tr>
+                    <td>Child</td>
+                    <td>$6.00</td>
+                    <td>$7.00</td>
+                    <td>$4.00</td>
+                </tr>
+                <tr>
+                    <td>Senior</td>
+                    <td>$7.00</td>
+                    <td>$9.00</td>
+                    <td>$4.00</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>$8.00</td>
+                    <td>$10.00</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Member*</td>
+                    <td>$5.00</td>
+                    <td>$8.00</td>
+                    <td>$4.00</td>
+                </tr>
+            </tbody>
+        </table> <!-- End Table  -->
+        <!-- Members value info  -->
+        <p class="member-info">*Members pay a yearly fee of $25 for discounted tickets, concessions, and online ticket ordering.</p>
+        <section class="form"> <!-- Ticket Reservation Form Wrapper -->
+            <h2>Reserve Your Tickets</h2>
+            <form action="#" method="post"> <!--  Start Form -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" title="Enter your name" required/>
+                <label for="member">Member Number</label>
+                <input type="text" id="member" name="member" placeholder="Enter your member number" title="Enter your member number" required/>
+                <label for="date">Show Date</label>
+                <input type="date" id="date" name="date" title="Select a show date" required/>
+                <label for="time">Show Time</label>
+                <input type="time" id="time" name="time" title="Select a show time" min="10:00:00.0" max="23:00:00.0" required/>
+                <label for="age">Your Age</label>
+                <input type="number" id="age" name="age" title="Age" value="18" min="16" max="120"/>
+                <label for="ticketOutput">Tickets <output name="ticketOutput" id="ticketOutput">1</output></label>
+                <input type="range" id="ticket" name="ticket" title="Select ticket amount" min="1" max="9" value="1" oninput="ticketOutput.value = ticket.value"/>
+                <input type="submit" value="Reserve" class="button"/>
+
+            </form> <!-- End Form  -->
+        </section><!--  End Form Wrapper -->
+
+
+    </div> <!--  End Content -->
+    <div class="cars"> <!--  Cars Banner -->
+        <img src="images/cars4.png" alt="cars banner">
+    </div> <!--  End Cars -->
+    <!--  Menu Hover Script -->
+    <script>
+        $(document).ready(function(){
+            $("#menu").hover(function(){
+                $("#submenu").slideToggle()
+            });
+            $("#share").hover(function(){
+                $("#share-menu").slideToggle()
+            });
+
+        });
+    </script>
+</body>
+</html>
